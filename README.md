@@ -11,7 +11,7 @@ front-end
 # Technical Stack
 This project has been build primarily with React, Redux, Redux-thunk
 
-# JSON Stubbing Details
+## JSON Stubbing Details
 In order to mock the fake the api calls, jsonstub.com platform was chosen. It allows to make 45 api calls in minutes. Please note, that the production build of the product:
 	- works smoothly in firefox
 	- does not work in Google Chrome, because the json stub server does not include Access-Control-Allow-Origin header in response to the preflight response. A CORS will fail if Access-Control-Allow-Origin is missing.
@@ -45,12 +45,14 @@ All reducers have been thoroughly test with 100% coverage;
 ## Presentation Container Pattern
 The logic aspect of the application is handled by LandingPageContainer Object and the view components are used to create the UI. Please note, the Cars component is presentation component, but it has logic to determine when to update. A measure taken to make a performant app.
 
+This pattern is great way to make sure that logic intensive stuff of the app is being dealt at the top layer of the app.
+
 # Potential Future Improvements
-## Error Boundary
+## 1.Error Boundary
 Currently the project does not have error boundary  component and thus if there is any error in the app, the whole app would crash. Certainly this should be avoided.
 
-## Use flow
+## 2.Use flow
 The input to all component is not checked and there is not process in place to ensure that required props are passed to the child components. This can lead to huge hindrance to debugging as the scope of the project grows.
 
-## Comments
+## 3.Comments
 The app does not have many comments. Instead, I focussed on naming the functions and classes in a intuitive fashion. However, when a large team is working on a project, the naming convention might not be standard amongst team members and comments can come to rescue
