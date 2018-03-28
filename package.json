@@ -1,20 +1,15 @@
 {
   "name": "fancycars",
   "version": "1.0.0",
-  "description": "Test Project",
+  "description": "Walmart Eval Project - FancyCars",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js --hot",
     "build": "webpack --config webpack.prod.js",
     "test": "jest --config jest-config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://kajrare@bitbucket.org/humdono/fancycars.git"
-  },
   "author": "Manjeet",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/kajrare/resumespoof#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.3",
