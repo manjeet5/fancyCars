@@ -35,7 +35,6 @@ class LandingPageContainer extends React.Component{
  }
 
  render(){
-	 console.log(this.props);
 	 return <LandingPage
  		sortBy={this.sortBy}
  		cars={this.props.sortBy === 'name'? this.sortByName(this.props.cars)
