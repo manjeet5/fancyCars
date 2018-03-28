@@ -1,0 +1,16 @@
+@import '../helpers/_variables.scss';
+button{
+	background:transparent;
+	border:solid white 0.2rem;
+	font-family: Roboto;
+	border-radius:0.3rem;
+	padding:0.3rem;
+	font-size:1rem;
+	color:$grey;
+	margin:0.5rem;
+	&:hover{
+		background:$grey;
+		color:$black;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,74 @@
+
+.buffer {
+	height:100vh;
+  display:flex;
+ 	justify-content: center;
+	align-items: center;}
+
+
+.layer1 {
+  -webkit-animation: 4s linear infinite;
+          animation: 4s linear infinite;
+  -webkit-animation-name: cycle1;
+          animation-name: cycle1; }
+
+.layer2 {
+  -webkit-animation: 4s linear infinite;
+          animation: 4s linear infinite;
+  -webkit-animation-name: cycle2;
+          animation-name: cycle2; }
+
+.layer3 {
+  -webkit-animation: 4s linear infinite;
+          animation: 4s linear infinite;
+  -webkit-animation-name: cycle3;
+          animation-name: cycle3; }
+
+
+@-webkit-keyframes cycle1 {
+  0%, 65% {
+    fill: #474143; }
+  75%, 82% {
+    fill: #FFC636; }
+  92%, 100% {
+    fill: #474143; } }
+
+@keyframes cycle1 {
+  0%, 65% {
+    fill: #474143; }
+  75%, 82% {
+    fill: #FFC636; }
+  92%, 100% {
+    fill: #474143; } }
+
+@-webkit-keyframes cycle2 {
+  0%, 40% {
+    fill: #474143; }
+  50%, 86% {
+    fill: #00ADA9; }
+  96%, 100% {
+    fill: #474143; } }
+
+@keyframes cycle2 {
+  0%, 40% {
+    fill: #474143; }
+  50%, 86% {
+    fill: #00ADA9; }
+  96%, 100% {
+    fill: #474143; } }
+
+@-webkit-keyframes cycle3 {
+  0%, 15% {
+    fill: #474143; }
+  25%, 90% {
+    fill: #FF6444; }
+  100% {
+    fill: #474143; } }
+
+@keyframes cycle3 {
+  0%, 15% {
+    fill:  #474143; }
+  25%, 90% {
+    fill: #FF6444; }
+  100% {
+    fill:  #474143; } }

@@ -1,0 +1,66 @@
+@import '../helpers/_variables.scss';
+.carContainer{
+	display:flex;
+	flex-flow:column nowrap;
+	font-family:Roboto;
+	background:$white;
+	box-shadow: 1px 1px #888888;
+  border-radius: 0.3rem;
+	//border:solid $darkgrey 0.1rem;
+	padding-bottom:1rem;
+	margin-bottom: 1rem;
+	font:1.3rem;
+	.imgContainer{
+		margin-bottom:0.5rem;
+		img{
+			width:100%;
+		}
+	}
+	.makeModelContainer{
+		display:flex;
+		flex-flow: row wrap;
+		justify-content:space-between;
+		padding: 0.5rem;
+		h6{
+			flex:1 0 auto;
+			margin:0;
+			font-weight:lighter;
+			&:first-child{
+				text-align: left;
+			}
+			&:last-child{
+				text-align: right;
+			}
+		}
+	}
+	.carNameContainer{
+		word-wrap: break-word;
+		color:$darkgrey;
+		text-align:center;
+		font:1.5rem;
+		h4{
+			margin:0;
+		}
+		padding-bottom:0.5rem;
+	}
+	button{
+		color:$orange;
+		font-size:1.5rem;
+		font-variant:small-caps;
+		border-color:$grey;
+		max-width:80%;
+		flex:1;
+		align-self:center;
+		max-width: 80%;
+		min-width: 60%;
+		margin:0;
+	}
+h5{
+	color:$darkgrey;
+	font-size:1.5rem;
+	font-variant:small-caps;
+	text-align: center;
+	margin:0;
+	padding:0.3rem;
+}
+}

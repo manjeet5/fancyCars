@@ -17,12 +17,13 @@ class LandingPageContainer extends React.Component{
  	store.dispatch(loadCars());
  }
  sortBy = (eventId)=>{
+	 console.log('SORT BY FUNCTION ', eventId);
 	 store.dispatch(sortBy(eventId));
  }
 
  sortByName = ()=>{
 	 return this.props.cars.sort((a,b)=>{
-		 if(a.id < b.id) return -1;
+		 if(a.id > b.id) return 1;
 	 });
  }
 
@@ -31,12 +32,13 @@ class LandingPageContainer extends React.Component{
 		 return (typeof element.available !== 'undefined' && element.available == 'In Dealership');
 	 });
  }
+
  render(){
- 	return <LandingPage
+	 return <LandingPage
  		sortBy={this.sortBy}
  		cars={this.props.sortBy === 'name'? this.sortByName(this.props.cars)
  			:this.props.sortBy === 'available'? this.sortByAvailable(this.props.car):
- 				this.props.car} greeting={this.state.greeting}/>;
+ 				this.props.cars} greeting={this.state.greeting}/>;
  }
 }
 

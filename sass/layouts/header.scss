@@ -1,0 +1,48 @@
+@import '../helpers/_variables.scss';
+
+.headerContainer{
+	background:$orange;
+	padding:1rem;
+	display:flex;
+	flex-flow:row;
+	justify-content: space-around;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	@media screen and (max-width:750px){
+		flex-flow:column;
+		justify-content: center;;
+	}
+	#companyName{
+		flex:1;
+		color:white;
+		font-size:4rem;
+			@media screen and (max-width:750px){
+				text-align:center;
+			}
+	}
+	.sortByContainer{
+		flex:1;
+		text-align:right;
+		padding-right:1rem;
+
+		color:white;
+		.titleSortByContainer{
+			//color:$grey;
+			padding-right: 0.5rem;
+			font-size:1.3rem;
+			font-variant:small-caps;
+		}
+		.buttonSortByContainer{
+
+			button{
+				margin:0.5rem;
+			}
+		}
+		@media screen and (max-width:750px){
+			text-align: center;
+			padding:1rem;
+		}
+	}
+}
