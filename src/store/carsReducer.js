@@ -12,16 +12,11 @@ export const CarsReducer = (state = carsList, action) =>{
 
 	case CREATE_CARS_LIST: return action.payload.slice(0);
 	case UPDATE_CAR_AVAILABILITY : {
-		console.log(action.payload);
-		let result =  state.map(element=>{
-			console.log(`element.id === action.payload.id ${element.id === action.payload.id}`);
-			return element.id === action.payload.id?
+		return state.map(element=>{
+			return element.id === Number(action.payload.id)?
 				Object.assign({}, element, {'available': action.payload.data.available})
 				: element;
 		});
-		console.log('RESULT');
-		console.log(result);
-		return result;
 	}
 	default: return state;
 	}
