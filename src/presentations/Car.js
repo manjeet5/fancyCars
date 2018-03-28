@@ -8,11 +8,11 @@ export class Car extends React.Component{
 				<img src={this.props.car.img} alt='Car Img'/>
 			</div>
 			<div className='makeModelContainer'>
-				<h6>Make </h6>
-				<h6>Model</h6>
+				<h6>{this.props.car.make} </h6>
+				<h6>{this.props.car.model}</h6>
 			</div>
 			<div className='carNameContainer'>
-				<h4> Name </h4>
+				<h4> {this.props.car.name} </h4>
 			</div>
 			{this.props.car.available !== 'In Dealership'? <h5>Not in Stock</h5>:
 				<button>In Stock</button>}

@@ -8,8 +8,11 @@
 	justify-content: space-between;
 	min-height: 100vh;
   align-items: center;
-	@media screen and (max-width:800px){
-		margin-top: 190px;
+	@media screen and (max-width:800px) and (orientation: portrait){
+		padding-top: 190px;
+	}
+	@media screen and (max-width:800px) and (orientation: landscape){
+		padding-top:190px;
 	}
 	.carContainer{
 		max-width:30%;
