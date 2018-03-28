@@ -50,7 +50,7 @@ module.exports = {
 		new CleanWebpackPlugin(['build']),
 		new HtmlWebpackPlugin({
 			favicon: 'html/favicon.ico',
-			title:'Resume Doodle',
+			title:'FancyCars',
 			template: './html/index.html',
 			inject: 'body'
 		})

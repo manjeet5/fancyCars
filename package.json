@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Test Project",
   "main": "index.js",
-	"scripts": {
+  "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js --hot",
     "build": "webpack --config webpack.prod.js",
     "test": "jest --config jest-config.js"
@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "clean-webpack-plugin": "^0.1.18",
+    "deep-freeze": "0.0.1",
     "react": "^16.2.0",
     "react-apollo": "^2.0.4",
     "react-dom": "^16.2.0",
