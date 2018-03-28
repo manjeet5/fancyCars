@@ -9,6 +9,7 @@ export class Car extends React.Component{
 			</div>
 			<div className='makeModelContainer'>
 				<h6>{this.props.car.make} </h6>
+				<h6>{this.props.car.year}</h6>
 				<h6>{this.props.car.model}</h6>
 			</div>
 			<div className='carNameContainer'>

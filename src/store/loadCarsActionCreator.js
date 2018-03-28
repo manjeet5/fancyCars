@@ -43,10 +43,14 @@ export function loadCars() {
 			.then(()=>{carList.forEach(
 				car=>{loadAvailability(car.id,dispatch);});
 			})
-			.catch(err => console.error('SERVER REQUEST FAILED: ' + err));
+			.catch(err => {console.error('SERVER REQUEST FAILED: ' + err);
+				loadFakeCarsList();});
 	};
 }
 
+const loadFakeCarsList = (fakeCarsList) =>{
+
+};
 
 const  loadAvailability = (id,dispatch) =>{
 	let carsAvailabilityPromise;
@@ -59,7 +63,6 @@ const  loadAvailability = (id,dispatch) =>{
 			});
 		})
 		.then(updateAvailability => dispatch(updateAvailability))
-		.then(result => {console.log(result);})
 		.catch(err => console.error('SERVER REQUEST FAILED: ' + err));
 
 

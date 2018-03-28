@@ -17,7 +17,6 @@ class LandingPageContainer extends React.Component{
  	store.dispatch(loadCars());
  }
  sortBy = (eventId)=>{
-	 console.log('SORT BY FUNCTION ', eventId);
 	 store.dispatch(sortBy(eventId));
  }
 
