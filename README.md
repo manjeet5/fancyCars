@@ -11,14 +11,14 @@ front-end
 # Technical Stack
 This project has been build primarily with React, Redux, Redux-thunk
 
-## JSON Stubbing Details
+### JSON Stubbing Details
 In order to mock the fake the api calls, jsonstub.com platform was chosen. It allows to make 45 api calls in minutes. Please note, that the production build of the product:
 	- works smoothly in firefox
 	- does not work in Google Chrome, because the json stub server does not include Access-Control-Allow-Origin header in response to the preflight response. A CORS will fail if Access-Control-Allow-Origin is missing.
 	A workaround to check the compatibility of the code in google chrome, will be to download the project, install the dependencies and run "npm run start"
 
 # Run the project
-## Firefox
+## Firefox/Safari
 - Install the build folder and open index.html in Firefox
 
 ## Google chrome
