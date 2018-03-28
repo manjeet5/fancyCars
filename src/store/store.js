@@ -3,9 +3,11 @@ import thunk from 'redux-thunk';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import {CarsReducer} from './carsReducer';
+import {SortReducer} from './sortReducer';
 
 const Reducers = combineReducers({
-	cars:CarsReducer
+	cars:CarsReducer,
+	sort:SortReducer
 });
 
 const store = createStore(
