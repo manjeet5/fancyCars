@@ -2,6 +2,10 @@ import React from 'react';
 import styles from '../../sass/layouts/car.scss';
 export class Car extends React.Component{
 
+	shouldComponentUpdate(prevProps){
+		//console.log(`typeof prevProps.car.available === 'undefined' && this.props.car.available !== 'undefined' ${typeof prevProps.car.available === 'undefined' && this.props.car.available !== 'undefined'}`);
+	 return (typeof prevProps.car.available === 'undefined' && this.props.car.available !== 'undefined');
+	}
 	render(){
 		return <div className='carContainer'>
 		  <div className='imgContainer'>
