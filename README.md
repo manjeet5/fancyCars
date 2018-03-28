@@ -48,11 +48,11 @@ The logic aspect of the application is handled by LandingPageContainer Object an
 This pattern is great way to make sure that logic intensive stuff of the app is being dealt at the top layer of the app.
 
 # Potential Future Improvements
-## 1.Error Boundary
+## Error Boundary
 Currently the project does not have error boundary  component and thus if there is any error in the app, the whole app would crash. Certainly this should be avoided.
 
-## 2.Use flow
+## Use flow
 The input to all component is not checked and there is not process in place to ensure that required props are passed to the child components. This can lead to huge hindrance to debugging as the scope of the project grows.
 
-## 3.Comments
+## Comments
 The app does not have many comments. Instead, I focussed on naming the functions and classes in a intuitive fashion. However, when a large team is working on a project, the naming convention might not be standard amongst team members and comments can come to rescue
