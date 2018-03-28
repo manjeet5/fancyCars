@@ -27,12 +27,15 @@ class LandingPageContainer extends React.Component{
  }
 
  sortByAvailable = () =>{
-	 return this.props.cars.filter(element =>{
+
+	 let result =  this.props.cars.filter(element =>{
 		 return (typeof element.available !== 'undefined' && element.available == 'In Dealership');
 	 });
+ 	return result;
  }
 
  render(){
+	 console.log(this.props);
 	 return <LandingPage
  		sortBy={this.sortBy}
  		cars={this.props.sortBy === 'name'? this.sortByName(this.props.cars)

@@ -2,7 +2,9 @@ import React from 'react';
 import styles from '../../sass/layouts/car.scss';
 export class Car extends React.Component{
 
-
+	shouldComponentUpdate(prevProps){
+	 return (JSON.stringify(this.props.car.available) != JSON.stringify(prevProps.car.available));
+	}
 	render(){
 		return <div className='carContainer'>
 		  <div className='imgContainer'>
