@@ -5,6 +5,7 @@ let requestHeader = {
 	method: 'GET',
 	mode: 'cors',
 	headers:{
+		'Access-Control-Allow-Origin': 'http://localhost',
 		'Content-Type':'application/json',
 		'JsonStub-User-Key':'13261a17-7f70-4d85-beb7-e4c5b5106fde',
 		'JsonStub-Project-Key':'94c118c5-481c-43dd-95b6-ef67a56dc7ba'

@@ -22,7 +22,7 @@ class LandingPageContainer extends React.Component{
 
  sortByName = ()=>{
 	 return this.props.cars.sort((a,b)=>{
-		 if(a.id > b.id) return 1;
+		 return (a.id > b.id)?1:(a.id < b.id)?-1:0;
 	 });
  }
 
@@ -35,6 +35,7 @@ class LandingPageContainer extends React.Component{
  }
 
  render(){
+	 console.log(this.props);
 	 return <LandingPage
  		sortBy={this.sortBy}
  		cars={this.props.sortBy === 'name'? this.sortByName(this.props.cars)
